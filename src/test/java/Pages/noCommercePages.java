@@ -82,19 +82,54 @@ public class noCommercePages {
     public WebElement VerifySuccessfulLogin;
 
 
+   //US_503
+
+    @FindBy (xpath = (""))
+    public WebElement XXX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXXXX  ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXXXXXXXX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXXXXXX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXXXXX ;
+
+    @FindBy (xpath = (""))
+    public WebElement XXXXXXXXXXXXX;
 
 
 
 
+    //US_504
+    @FindBy (xpath = (""))
+    public WebElement ACCC;
 
+    @FindBy (xpath = (""))
+    public WebElement ACHCC;
 
+    @FindBy (xpath = (""))
+    public WebElement ASDCCC;
 
+    @FindBy (xpath = (""))
+    public WebElement ACCCSD;
+    @FindBy (xpath = (""))
+    public WebElement ACCSDFC;
 
+    @FindBy (xpath = (""))
+    public WebElement GHJACCC;
 
-
-
-
-
-
+    @FindBy (xpath = (""))
+    public WebElement ACGHJCC;
 
 }
