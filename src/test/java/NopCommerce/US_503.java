@@ -53,14 +53,26 @@ public class US_503 {
         noCommercePages.invEmail.sendKeys(email);
         noCommercePages.ValidPass.sendKeys(password);
         noCommercePages.InvEmailclickLoginButon.click();
+    }
+
+    @Test(dataProvider = "loginValidEmailEmptyPass", dataProviderClass = TestData.class)
+    public void loginPagevalidEmailEmptyPass(String email, String password){
+        noCommercePages.ınvEmailloginSingUpButton.click();
+        noCommercePages.invEmail.sendKeys(email);
+        noCommercePages.ValidPass.sendKeys(password);
+        noCommercePages.InvEmailclickLoginButon.click();
+    }
+    @Test(dataProvider = "loginEmptyEmailValidPass", dataProviderClass = TestData.class)
+    public void loginPageEmptyEmailValidPass(String email, String password) {
+        noCommercePages.ınvEmailloginSingUpButton.click();
+        noCommercePages.invEmail.sendKeys(email);
+        noCommercePages.ValidPass.sendKeys(password);
+        noCommercePages.InvEmailclickLoginButon.click();
 
     }
-    @AfterMethod
+        @AfterMethod
     public void tearDown(){
         WebDriverFactory.getDriver().close();
     }
-
-
-
 
 }
