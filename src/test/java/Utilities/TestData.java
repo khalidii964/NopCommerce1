@@ -4,18 +4,32 @@ import org.testng.annotations.DataProvider;
 
 public class TestData {
 
-    @DataProvider(name = "loginPositiveData")
-    public Object[][] loginTestData() {
+    @DataProvider(name = "loginValidEmailInvalidPassData")
+    public Object[][] loginNegative() {
         Object[][] testDate = {
-                {"", ""},
-                {"Admin", "Admin123"},
+                {"t.one@techno.com", "111111"},
         };
         return testDate;
     }
-    @DataProvider(name = "loginPositiveDataCorrect")
-    public Object[][] loginCorrect() {
+    @DataProvider(name = "loginInvalidEmailValidPass")
+    public Object[][] loginNegative2() {
         Object[][] testDate = {
-                {"Admin", "Admin123"},
+                {"xxxxxx@gmail.com", "Qwerty12"},
+        };
+        return testDate;
+    }
+
+    @DataProvider(name = "loginValidEmailEmptyPass")
+    public Object[][] loginNegative3() {
+        Object[][] testDate = {
+                {"t.one@techno.com", " "},
+        };
+        return testDate;
+    }
+    @DataProvider(name = "loginEmptyEmailValidPass")
+    public Object[][] loginNegative4() {
+        Object[][] testDate = {
+                {" ", "Qwerty12"},
         };
         return testDate;
     }
