@@ -2,6 +2,7 @@ package NopCommerce;
 
 import Pages.noCommercePages;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import Utilities.UIHelpers;
 import Utilities.ConfigReader;
@@ -24,7 +25,7 @@ public class US_503 {
     UIHelpers uiHelpers = new UIHelpers();
     @BeforeMethod
     public void setUp(){
-        //1-Navigate to the URL 'http://automationexercise.com'.
+        //1-Navigate to the URL 'https://demo.nopcommerce.com/'.
         WebDriverFactory.getDriver().get(ConfigReader.getProperty("nopcommerce"));
     }
     @Test(dataProvider = "loginValidEmailInvalidPassData", dataProviderClass = TestData.class)
@@ -44,20 +45,19 @@ public class US_503 {
         // 4. The user should receive warnings from the system during invalid login attempts.
         Assert.assertTrue(noCommercePages.warningIsDisplayed.isDisplayed());
     }
+    
     @Test(dataProvider = "loginInvalidEmailValidPass", dataProviderClass = TestData.class)
     public void loginPageInvalidEmailValidPass(String email, String password){
 
-        // 1. The user should be able to access the login page by clicking the "Login" button on the website's homepage.
+        noCommercePages.ınvEmailloginSingUpButton.click();
+        noCommercePages.invEmail.sendKeys(email);
+        noCommercePages.ValidPass.sendKeys(password);
+        noCommercePages.InvEmailclickLoginButon.click();
 
-
-        // 2. On the login page, the user should be prompted to enter the following information: - Email Address - Password
-
-
-        // 3. The user should attempt to log in with 6 invalid email and password combinations using the data provider method.
-
-
-        // 4. The user should receive warnings from the system during invalid login attempts.
-
+    }
+    @AfterMethod
+    public void tearDown(){
+        WebDriverFactory.getDriver().close();
     }
 
 

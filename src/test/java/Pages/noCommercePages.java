@@ -84,7 +84,8 @@ public class noCommercePages {
 
 
     //US_503
-    //input[@type='checkbox']
+
+    //valid email invalid password
 
     @FindBy (xpath = "//input[@type='checkbox']")
     public WebElement noCommerceVerify;
@@ -111,7 +112,20 @@ public class noCommercePages {
     public WebElement warningIsDisplayed;
 
 
+    //invalid email valid password
 
+    @FindBy (xpath = "(//a[normalize-space()='Log in'])[1]")
+    public WebElement ınvEmailloginSingUpButton;
+
+    @FindBy (xpath = "(//button[normalize-space()='Log in'])[1]")
+    public WebElement InvEmailclickLoginButon;
+
+
+    @FindBy (xpath = "(//input[@id='Email'])[1]")
+    public WebElement invEmail;
+
+    @FindBy (xpath = "(//input[@id='Password'])[1]")
+    public WebElement ValidPass;
 
 
 
