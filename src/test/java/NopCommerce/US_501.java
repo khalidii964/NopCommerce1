@@ -62,8 +62,8 @@ public class US_501 {
 
 
         //3. Enter Customer Data:
-        noCommercePages.FirstName.sendKeys("Khaliddd");
-        noCommercePages.LastName.sendKeys("Hassannn");
+        noCommercePages.FirstName.sendKeys("TeamOne");
+        noCommercePages.LastName.sendKeys("Techno123");
         noCommercePages.ChooseGender.click();
 
        // 4. Select Date of Birth:
@@ -87,11 +87,11 @@ public class US_501 {
 //                - **Date of Birth:** _May 5, 2005_
 //                - **Email:** _t.one@techno.com_
 //        - **Password:** _Qwerty12_
-        noCommercePages.EmailAdress.sendKeys("novara1953@snooodi.com");
-        noCommercePages.CompanyName.sendKeys("TechnoStudyyy");
+        noCommercePages.EmailAdress.sendKeys("t.one@techno.com");
+        noCommercePages.CompanyName.sendKeys("t.one@techno.com");
 
-        noCommercePages.Password.sendKeys("Khalid123");
-        noCommercePages.ConfirmPassword.sendKeys("Khalid123");
+        noCommercePages.Password.sendKeys("Qwerty12");
+        noCommercePages.ConfirmPassword.sendKeys("Qwerty12");
 
         noCommercePages.ClickRegisterButton.click();
 

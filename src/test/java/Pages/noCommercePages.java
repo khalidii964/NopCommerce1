@@ -10,8 +10,10 @@ public class noCommercePages {
     public noCommercePages() {
         PageFactory.initElements(WebDriverFactory.getDriver(), this);
     }
+
     // You can create your own
 
+    //US_501
     @FindBy(xpath = ("(//a[normalize-space()='Register'])[1]"))
     public WebElement VerifyClickableRegisterButton;
 
@@ -60,6 +62,25 @@ public class noCommercePages {
 
     @FindBy (xpath = ("//a[@class='button-1 register-continue-button']"))
     public WebElement ClickContinue;
+
+
+//US_502
+    @FindBy (xpath = ("(//a[normalize-space()='Log in'])[1]"))
+    public WebElement AccessLoginPage;
+
+    @FindBy (xpath = ("(//input[@id='Email'])[1]"))
+    public WebElement EmailTextBox;
+
+
+    @FindBy (xpath = ("(//input[@id='Password'])[1]"))
+    public WebElement PasswordTextBox;
+
+    @FindBy (xpath = ("(//button[normalize-space()='Log in'])[1]"))
+    public WebElement SubmitLogin ;
+
+    @FindBy (xpath = ("(//a[@class='ico-account'])[1]"))
+    public WebElement VerifySuccessfulLogin;
+
 
 
 
