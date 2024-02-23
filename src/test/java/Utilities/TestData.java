@@ -23,7 +23,7 @@ public class TestData {
     @DataProvider(name = "loginValidEmailInvPass")
     public Object[][] loginValidEmailInvPass() {
         Object[][] testDate = {
-                {"t.one@techno.com", "11111"},
+                {"gokcehamza2934@gmail.com", "11111"},
         };
         return testDate;
     }
@@ -31,7 +31,7 @@ public class TestData {
     @DataProvider(name = "loginInvalidEmailValidPass")
     public Object[][] loginınValidEmailValidPass() {
         Object[][] testDate = {
-                {"xxxd@gmail.com", "Qwerty12"},
+                {"xxxd@gmail.com", "123456789"},
         };
         return testDate;
     }
@@ -39,7 +39,7 @@ public class TestData {
     @DataProvider(name = "loginValidEmailEmptyPass")
     public Object[][] loginınValidEmailEmptyPass() {
         Object[][] testDate = {
-                {"xxxd@gmail.com", " "},
+                {"gokcehamza2934@gmail.com", ""},
         };
         return testDate;
     }
@@ -48,16 +48,25 @@ public class TestData {
     @DataProvider(name = "loginEmptyEmailValidPass")
     public Object[][] loginınEmptyEmailValidPass() {
         Object[][] testDate = {
-                {" ", "Qwerty12"},
+                {"", "123456789"},
+        };
+        return testDate;
+    }
+
+    @DataProvider(name = "loginEmptyEmailEmptyPass")
+    public Object[][] loginınEmptyEmailEmptyPass() {
+        Object[][] testDate = {
+                {"", ""},
         };
         return testDate;
     }
 
 
+
     @DataProvider(name = "loginValidEmailValidPass")
     public Object[][] loginValidEmailValidPass() {
         Object[][] testDate = {
-                {"t.one@techno.com", "Qwerty12"},
+                {"gokcehamza2934@gmail.com", "123456789"},
         };
         return testDate;
     }

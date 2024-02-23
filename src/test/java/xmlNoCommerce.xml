@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Suite">
-    <test name="Frst xml Test">
+    <test name="Team1 NopCommerce xml Test">
         <classes>
             <class name="NopCommerce.US_501"></class>
+            <class name="NopCommerce.US_502"></class>
+            <class name="NopCommerce.US_503"></class>
+            <class name="NopCommerce.US_504"></class>
+
         </classes>
     </test>
 </suite>

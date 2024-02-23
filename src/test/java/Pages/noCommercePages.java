@@ -84,29 +84,29 @@ public class noCommercePages {
 
    //US_503
 
-    @FindBy (xpath = (""))
-    public WebElement XXX ;
+    @FindBy (xpath = ("(//a[normalize-space()='Log in'])[1]"))
+    public WebElement loginButtonClick  ;
 
-    @FindBy (xpath = (""))
-    public WebElement XX ;
+    @FindBy (xpath = ("(//input[@id='Email'])[1]"))
+    public WebElement writeEmail ;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXX ;
+    @FindBy (xpath = ("(//input[@id='Password'])[1]"))
+    public WebElement writePass ;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXXXX  ;
+    @FindBy (xpath = ("(//button[normalize-space()='Log in'])[1]"))
+    public WebElement clickLoginAccessButton ;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXXXXXXXX ;
+    @FindBy (xpath = ("(//div[@class='message-error validation-summary-errors'])[1]"))
+    public WebElement verifyWarningMessage ;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXXXXXX ;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXXXXX ;
+    @FindBy (xpath = ( "(//span[@id='Email-error'])[1]"))
+    public WebElement verifyWarningEmptyEmailMessage;
 
-    @FindBy (xpath = (""))
-    public WebElement XXXXXXXXXXXXX;
+
+
+
+
 
 
 
