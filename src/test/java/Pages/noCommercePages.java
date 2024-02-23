@@ -80,9 +80,17 @@ public class noCommercePages {
 
     @FindBy (xpath = ("(//a[@class='ico-account'])[1]"))
     public WebElement VerifySuccessfulLogin;
+////US_505
+@FindBy (xpath = ("(//a[normalize-space()='Computers'])[1]"))
+public WebElement ComputersButton;
+    @FindBy (xpath = ("//ul[@class='top-menu notmobile']//a[normalize-space()='Notebooks']"))
+    public WebElement NotebooksButton;
 
+    @FindBy (xpath = ("//a[normalize-space()='List']"))
+    public WebElement LinesButton;
 
-
+    @FindBy (xpath = ("(//a[normalize-space()='Apple MacBook Pro 13-inch'])[1]"))
+    public WebElement AppleMacBookPro ;
 
 
 

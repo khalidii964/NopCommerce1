@@ -4,6 +4,8 @@
     <test name="Frst xml Test">
         <classes>
             <class name="NopCommerce.US_501"></class>
+            <class name="NopCommerce.US_505"></class>
+
         </classes>
     </test>
 </suite>
