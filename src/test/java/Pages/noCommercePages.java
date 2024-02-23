@@ -92,6 +92,35 @@ public WebElement ComputersButton;
     @FindBy (xpath = ("(//a[normalize-space()='Apple MacBook Pro 13-inch'])[1]"))
     public WebElement AppleMacBookPro ;
 
+    //US_506
+
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[normalize-space()='Gift Cards']")
+    private WebElement giftsTab;
+
+    @FindBy(xpath = "//div[@class='item-grid']")
+    private WebElement scrollingDown;
+
+    @FindBy(xpath = "(//a[contains(text(),'$25 Virtual Gift Card')])[2]")
+    private WebElement firstGiftCard;
+
+    @FindBy(xpath = "//button[@id='add-to-cart-button-43']")
+    private WebElement addToCartButton;
+
+    @FindBy(xpath = "//input[@id='giftcard_43_RecipientName']")
+    private WebElement recipientName;
+
+    @FindBy(xpath = "//input[@id='giftcard_43_RecipientEmail']")
+    private WebElement recipientEmail;
+
+    @FindBy(xpath = "//input[@id='giftcard_43_SenderName']")
+    private WebElement senderName;
+
+    @FindBy(xpath = "//input[@id='giftcard_43_SenderEmail']")
+    private WebElement senderEmail;
+
+    @FindBy(xpath = "//textarea[@id='giftcard_43_Message']")
+    private WebElement giftMessage;
+
 
 
 
