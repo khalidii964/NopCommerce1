@@ -17,7 +17,7 @@ public class US_503  {
     UIHelpers uiHelpers =new UIHelpers();
     noCommercePages noCommercePages=new noCommercePages();
     /*
-    AC_03:
+    AC_03:f..
 1. The user should be able to access the login page by clicking the "Login" button on the website's homepage.
 2. On the login page, the user should be prompted to enter the following information:
     - Email Address
