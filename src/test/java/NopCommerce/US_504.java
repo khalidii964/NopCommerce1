@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class US_504 {
     /*
     AC_04:
-1. I should be able to access the platform's homepage.
+1. I should be able to access the platform's homepage....
 2. I should be able to confirm the presence of the tab menu on the page and verify that its elements are listed.
 3. I should be able to click on each element in the tab menu.
 4. I should be confident that clicking on each element in the tab menu directs me to its respective page.
