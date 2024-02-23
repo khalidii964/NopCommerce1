@@ -92,6 +92,14 @@ public WebElement ComputersButton;
     @FindBy (xpath = ("(//a[normalize-space()='Apple MacBook Pro 13-inch'])[1]"))
     public WebElement AppleMacBookPro ;
 
+    @FindBy (xpath = ("//input[@id='small-searchterms']"))
+    public WebElement SearchStoreButton ;
+
+    @FindBy (xpath = ("//button[normalize-space()='Search']"))
+    public WebElement Search ;
+////h2[@class='product-title']//a[contains(text(),'Apple MacBook Pro 13-inch')]
+@FindBy (xpath = ("(//a[contains(text(),'Apple MacBook Pro 13-inch')])[2]"))
+public WebElement AppleMacbookPro ;
 
 
 
