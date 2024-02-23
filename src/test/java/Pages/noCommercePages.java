@@ -1,12 +1,15 @@
 package Pages;
 
+import Utilities.UIHelpers;
 import Utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class noCommercePages {
+import java.util.List;
+
+public class noCommercePages extends UIHelpers {
     public noCommercePages() {
         PageFactory.initElements(WebDriverFactory.getDriver(), this);
     }
@@ -105,31 +108,23 @@ public class noCommercePages {
 
 
 
-
-
-
-
-
-
     //US_504
-    @FindBy (xpath = (""))
-    public WebElement ACCC;
+    @FindBy(xpath = "(//ul[@class='top-menu notmobile']//ul)[1]//a")
+    public List<WebElement> computerList;
 
-    @FindBy (xpath = (""))
-    public WebElement ACHCC;
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[text()='Computers ']")
+    public WebElement computer;
 
-    @FindBy (xpath = (""))
-    public WebElement ASDCCC;
+    @FindBy(xpath = "(//ul[@class='top-menu notmobile']//ul)[2]//a")
+    public List<WebElement> electronicsList;
 
-    @FindBy (xpath = (""))
-    public WebElement ACCCSD;
-    @FindBy (xpath = (""))
-    public WebElement ACCSDFC;
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[text()='Electronics ']")
+    public WebElement electronics;
 
-    @FindBy (xpath = (""))
-    public WebElement GHJACCC;
+    @FindBy(xpath = "(//ul[@class='top-menu notmobile']//ul)[3]//a")
+    public List<WebElement> apparelList;
 
-    @FindBy (xpath = (""))
-    public WebElement ACGHJCC;
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[text()='Apparel ']")
+    public WebElement apparel;
 
 }
