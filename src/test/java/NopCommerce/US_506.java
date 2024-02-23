@@ -1,5 +1,9 @@
 package NopCommerce;
 
+import Pages.noCommercePages;
+import Utilities.ConfigReader;
+import Utilities.UIHelpers;
+import Utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,15 +11,17 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.UIHelpers;
-import utilities.WebDriverFactory;
+
 
 public class US_506 {
     private WebDriver driver;
-    private UIHelpers uiHelpers = new UIHelpers();
+    UIHelpers uiHelpers = new UIHelpers();
+
+    Pages.noCommercePages noCommercePages = new noCommercePages();
 
     @BeforeMethod
     public void setUp() {
+        WebDriverFactory.getDriver().get(ConfigReader.getProperty("NopCommerce"));
         driver = WebDriverFactory.getDriver();
         driver.manage().window().maximize();
         driver.get("https://demo.nopcommerce.com/"); // Directly using the URL here

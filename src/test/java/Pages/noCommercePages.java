@@ -122,6 +122,28 @@ public WebElement ComputersButton;
     private WebElement giftMessage;
 
 
+    //US_503
+
+    @FindBy (xpath = ("(//a[normalize-space()='Log in'])[1]"))
+    public WebElement loginButtonClick  ;
+
+    @FindBy (xpath = ("(//input[@id='Email'])[1]"))
+    public WebElement writeEmail ;
+
+    @FindBy (xpath = ("(//input[@id='Password'])[1]"))
+    public WebElement writePass ;
+
+    @FindBy (xpath = ("(//button[normalize-space()='Log in'])[1]"))
+    public WebElement clickLoginAccessButton ;
+
+    @FindBy (xpath = ("(//div[@class='message-error validation-summary-errors'])[1]"))
+    public WebElement verifyWarningMessage ;
+
+
+    @FindBy (xpath = ( "(//span[@id='Email-error'])[1]"))
+    public WebElement verifyWarningEmptyEmailMessage;
+
+
 
 
 
